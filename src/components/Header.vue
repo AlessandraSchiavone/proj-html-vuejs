@@ -4,12 +4,11 @@
       <section id="nav-bar">
           <img src="../assets/img/logo-sidearea-1.png" alt="Logo Maree">
           <ul class="list-inline">
-              <li ><span class="active">Home</span></li>
-              <li>Pages</li>
-              <li>Portfolio</li>
-              <li>Blog</li>
-              <li>Shop</li>
-              <li>Elements</li>
+              <li v-for="(item,index) in items" :key="index">
+                  <a :href="item.url">
+                   <span @click="toggleActive(index)" :class="{active: item.active}">{{ item.name }} </span>
+                  </a>
+                </li>
               <li><img src="../assets/svg/svg-1.svg" alt="All"></li>
           </ul>
       </section>
@@ -73,7 +72,19 @@
 
 <script>
 export default {
-    name:"Header"
+    name:"Header",
+    props:["items"],
+    methods: {
+        toggleActive: function(index) {
+            this.items[index].active = !this.items[index].active;
+            for(let i=0; i< this.items.length;i++){
+                if(i!=index){
+                    this.items[i].active = false;
+                } 
+            }
+            return(this.items[index].active)
+        }
+    }
 }
 </script>
 
@@ -99,12 +110,16 @@ export default {
             letter-spacing: 3px;
             list-style:none;
             line-height:19px;
-            cursor:pointer;
-            span{
+            a{
+                text-decoration: none;
+                color:black;
+                span{
+                cursor:pointer;
                 display: inline-block;
                 &.active {
                 line-height: 6px;  
                 border-bottom:5px solid #F5D8CA;
+                }
                 }
             }
             img{

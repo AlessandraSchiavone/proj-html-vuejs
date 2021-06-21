@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-   <Header />
+   <Header :items="navbaritems"/>
    <Main />
    <Footer />
   </div>
@@ -17,6 +17,42 @@ export default {
     Header,
     Main,
     Footer
+  },
+  data(){
+    return {
+      navbaritems:[
+        {
+          name:"Home",
+          url:"#Home",
+          active:false,
+        },
+        {
+          name:"Pages",
+          url:"#Pages",
+          active:false,
+        },
+        {
+          name:"Portfolio",
+          url:"#Portfolio",
+          active:false,
+        },
+        {
+          name:"Blog",
+          url:"#Blog",
+          active:false,
+        },
+        {
+          name:"Shop",
+          url:"#Shop",
+          active:false,
+        },
+        {
+          name:"Elements",
+          url:"#Elements",
+          active:false,
+        }
+      ]
+    }
   }
 }
 </script>
