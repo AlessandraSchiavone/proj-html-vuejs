@@ -13,37 +13,56 @@
           </ul>
       </section>
       <section id="jumbotron">
-          <div class="colsx col-lg-6">
-              <div class="col-lg-8 offset-lg-4">
-                <h1>Devotion that never <span class="coursive">ends</span></h1>
-                <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, molestias!</h4>
-                <button id="bt-white"> Read More </button>
-              </div>
+          <div class="chevron">
+              <span class="circle">
+                  <i class="fas fa-chevron-left"></i>
+              </span>
+  
+          </div>
+          
+          <div class="box">
+            <div class="colsx col-lg-6">
+                <div class="col-lg-8 offset-lg-4">
+                    <h1>Devotion that never <span class="coursive">ends</span></h1>
+                    <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, molestias!</h4>
+                    <button id="bt-white"> Read More </button>
+                </div>
+             </div>
+            <div class="coldx col-lg-6">
+                <div class="row-1">
+                    <img src="../assets/img/short-slider-rev-1-img-2.png" alt="">
+                    <img src="../assets/img/h-2-slider-img-14.png" alt="">
+                </div>
+                <div class="row-2">
+                        <div class="subrow-1">
+                            <img src="../assets/img/h-2-slider-img-12.png" alt=""> 
+                        </div>
+                        <div class="subrow-2">
+                        <img src="../assets/img/h-2-slider-img-13.png" alt="">  
+                        </div>
+                        <img src="../assets/img/h-2-slider-img-15.png" alt="">
+                        <img src="../assets/img/h-2-slider-img-16.png" alt="">
+                        <div class="subrow-3">
+                            <img src="../assets/img/short-slider-rev-1-img-6.png" alt="">
+                        </div>
+                        <div class="subrow-4">
+                        <img src="../assets/img/h-2-slider-img-17.png" alt=""> 
+                        </div>
+                </div>
+            </div>   
+            <div class="slider-items">
+                <span class="small-circle"></span>
+                <span class="small-circle"></span>
+                <span class="small-circle"></span>
+            </div>
+          </div>
 
-              
+          <div class="chevron">
+              <span class="circle">
+                  <i class="fas fa-chevron-right"></i>
+              </span>
           </div>
-          <div class="coldx col-lg-6">
-              <div class="row-1">
-                  <img src="../assets/img/short-slider-rev-1-img-2.png" alt="">
-                  <img src="../assets/img/h-2-slider-img-14.png" alt="">
-              </div>
-              <div class="row-2">
-                    <div class="subrow-1">
-                        <img src="../assets/img/h-2-slider-img-12.png" alt=""> 
-                    </div>
-                    <div class="subrow-2">
-                      <img src="../assets/img/h-2-slider-img-13.png" alt="">  
-                    </div>
-                    <img src="../assets/img/h-2-slider-img-15.png" alt="">
-                    <img src="../assets/img/h-2-slider-img-16.png" alt="">
-                    <div class="subrow-3">
-                        <img src="../assets/img/short-slider-rev-1-img-6.png" alt="">
-                    </div>
-                    <div class="subrow-4">
-                     <img src="../assets/img/h-2-slider-img-17.png" alt=""> 
-                    </div>
-               </div>
-          </div>
+          
           
       </section>
   </header>
@@ -94,6 +113,31 @@ export default {
 #jumbotron{
     font-family: 'Roboto', sans-serif;
     display: flex;
+    padding:0px 20px;
+    justify-content: space-between;
+    height:600px;
+    .chevron{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height:100%;
+       .circle{
+            height:30px;
+            width:30px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            color:white;
+            border-radius:50%;
+            cursor: pointer;
+            background-color:#E1C0B0 ;
+            padding:5px;
+        }   
+    }
+    
+    .box{
+        display: flex;
+        flex-wrap: wrap;
     .colsx{
       height:100%;
       padding:50px 10px; 
@@ -168,5 +212,21 @@ export default {
             }
         }    
     }
+    .slider-items{
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .small-circle{
+            height:10px;
+            width:10px;
+            border-radius:50%;
+            margin:0 15px;
+            cursor: pointer;
+            background-color:#E1C0B0 ;
+        }
+    }
+    }
+    
 }
 </style>

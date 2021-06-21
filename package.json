@@ -12,6 +12,7 @@
     "@fontsource/noto-sans": "^4.4.5",
     "@fontsource/open-sans": "^4.4.5",
     "@fontsource/roboto": "^4.4.5",
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "bootstrap": "^5.0.1",
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
