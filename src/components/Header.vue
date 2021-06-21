@@ -162,7 +162,7 @@ export default {
       h1{
           padding-top:30px;
           font-size:85px;
-          font-weight: 300;
+          font-weight:300;
           .coursive{
               font-family: 'Courgette', cursive;
               font-weight: 600;
