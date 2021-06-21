@@ -1,5 +1,6 @@
 <template>
   <header>
+      <!-- section dedicata alla nav-bar e al logo  -->
       <section id="nav-bar">
           <img src="../assets/img/logo-sidearea-1.png" alt="Logo Maree">
           <ul class="list-inline">
@@ -12,22 +13,26 @@
               <li><img src="../assets/svg/svg-1.svg" alt="All"></li>
           </ul>
       </section>
+      <!-- section jumbotron -->
       <section id="jumbotron">
+          <!-- chevron laterale dello slider -->
           <div class="chevron">
               <span class="circle">
                   <i class="fas fa-chevron-left"></i>
               </span>
-  
-          </div>
-          
+          </div> 
+          <!-- box contenitore della parte centrale suddiviso in due colonne della stessa dimensione e dallo slier-items    -->
           <div class="box">
+              <!-- colonna di sinistra -->
             <div class="colsx col-lg-6">
+                <!-- titolo e bottone -->
                 <div class="col-lg-8 offset-lg-4">
                     <h1>Devotion that never <span class="coursive">ends</span></h1>
                     <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, molestias!</h4>
                     <button id="bt-white"> Read More </button>
                 </div>
              </div>
+             <!-- colonna di destra suddivisa in riga e sottorighe per ottenere l'immagine finale -->
             <div class="coldx col-lg-6">
                 <div class="row-1">
                     <img src="../assets/img/short-slider-rev-1-img-2.png" alt="">
@@ -56,14 +61,12 @@
                 <span class="small-circle"></span>
             </div>
           </div>
-
+        <!-- chevron laterale dello slider -->
           <div class="chevron">
               <span class="circle">
                   <i class="fas fa-chevron-right"></i>
               </span>
-          </div>
-          
-          
+          </div>     
       </section>
   </header>
 </template>
