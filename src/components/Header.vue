@@ -171,7 +171,7 @@ export default {
       h4{
           width:85%;
           padding:5px 0px;
-          color:#A6A6A6;
+          color:#878787;
           font-weight: 100;
           font-size: 22px;
           line-height: 1.4;
