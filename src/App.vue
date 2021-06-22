@@ -2,7 +2,11 @@
   <div id="app">
    <Header :items="navbaritems"/>
    <Main />
-   <Footer />
+   <Footer 
+   :socialItems="socials"
+   :mail="email"
+   :tel="number"
+   :address="addresses"/>
   </div>
 </template>
 
@@ -51,6 +55,38 @@ export default {
           url:"#Elements",
           active:false,
         }
+      ],
+      socials:[
+        {
+          class:"fa-twitter",
+          url:"https://twitter.com"
+        },
+        {
+          class:"fa-pinterest-p",
+          url:"https://www.pinterest.it/"
+        },
+        {
+          class:"fa-facebook-f",
+          url:"https://www.facebook.com"
+        },
+        {
+          class:"fa-linkedin-in",
+          url:"https://it.linkedin.com/"
+        },
+      ],
+      email:"maree.qcode@hotmail.com",
+      number:"+44645 321 789",
+      addresses:[
+        {
+          name:"Avenue d'Auderghem 10",
+          url:"https://www.google.it/maps/place/Avenue+d'Auderghem+10,+1000+Bruxelles,+Belgio/@50.841726,4.3823365,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3c4a18bc7d62f:0xb112fd8cbf26bdbf!8m2!3d50.8417226!4d4.3845252"
+        },
+        {
+          name:"1040 Brussels, Belgium",
+          url:"https://www.google.it/maps/place/Avenue+d'Auderghem+10,+1000+Bruxelles,+Belgio/@50.841726,4.3823365,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3c4a18bc7d62f:0xb112fd8cbf26bdbf!8m2!3d50.8417226!4d4.3845252"
+        }
+        
+        
       ]
     }
   }

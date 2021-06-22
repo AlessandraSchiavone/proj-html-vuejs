@@ -1,5 +1,7 @@
 <template>
   <main>
+      <!-- suddivisione del main in 4 section -->
+      <!-- sezione portfolio  -->
       <section id="portfolio-grid">
           <div class="col-lg-4">
               <img src="../assets/img/h-2-port-img-1.jpg" alt="">
@@ -12,6 +14,7 @@
           </div>
           <div class="col-lg-4 book" >
               <img src="../assets/img/h-2-port-img-4.jpg" alt="">
+              <!-- effetto hover -->
               <div class="text">
                   <h4>Illustration of novels</h4>
                   <h5>Illustration</h5>
@@ -24,6 +27,7 @@
               <img src="../assets/img/h-2-port-img-6.jpg" alt="">
           </div>
       </section>
+      <!-- sezione process -->
       <section id="process">
           <h3>Working <span class="coursive">process</span></h3>
           <div class="items-center">
@@ -58,22 +62,24 @@
           </div>
           
       </section>
+      <!-- sezione contatti -->
       <section id="contactus">
         <h3>Want to work with us? Send us <span class="coursive">a message!</span></h3>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, eius rem cumque impedit soluta commodi reprehenderit dolor ullam minima esse quaerat ratione error consequuntur odio expedita nisi porro cum enim.</p>  
         <button>Contact </button>
       </section>
+      <!-- sezione blog -->
       <section id="blog">
          <div class="col-lg-4">
              <div class="article">
+            <!-- decorazione linguetta per la data -->
               <div class="date">
-                  <div class="decoration-1">07</div>
-                  <div class="decoration-2">May' 19</div>
-                  <div class="ribbon">
-                      <div class="decoration-3"></div>
-                      <div class="decoration-4"></div>
-                  </div>
-                  
+                    <div class="decoration-1">07</div>
+                    <div class="decoration-2">May' 19</div>
+                    <div class="ribbon">
+                        <div class="decoration-3"></div>
+                        <div class="decoration-4"></div>
+                    </div>  
               </div>
               <img src="../assets/img/h-2-blog-img-1.jpg" alt=""> 
               <p>This way, loves: a detailed guide through new design</p>
@@ -82,13 +88,14 @@
          </div>
          <div class="col-lg-4">
              <div class="article">
+            <!-- decorazione linguetta per la data -->
                 <div class="date">
-                  <div class="decoration-1">07</div>
-                  <div class="decoration-2">May' 19</div>
-                  <div class="ribbon">
-                      <div class="decoration-3"></div>
-                      <div class="decoration-4"></div>
-                  </div>
+                    <div class="decoration-1">07</div>
+                    <div class="decoration-2">May' 19</div>
+                    <div class="ribbon">
+                        <div class="decoration-3"></div>
+                        <div class="decoration-4"></div>
+                    </div>
               </div> 
                <img src="../assets/img/h-2-blog-img-2.jpg" alt=""> 
                <p>I try to give people a different way of looking art</p> 
@@ -96,19 +103,20 @@
              </div>   
          </div>
          <div class="col-lg-4">
-             <div class="article">
+            <div class="article">
+            <!-- decorazione linguetta per la data -->     
                 <div class="date">
-                  <div class="decoration-1">07</div>
-                  <div class="decoration-2">May' 19</div>
-                  <div class="ribbon">
-                      <div class="decoration-3"></div>
-                      <div class="decoration-4"></div>
-                  </div>
-              </div>
+                    <div class="decoration-1">07</div>
+                    <div class="decoration-2">May' 19</div>
+                    <div class="ribbon">
+                        <div class="decoration-3"></div>
+                        <div class="decoration-4"></div>
+                    </div>
+                </div>
                 <img src="../assets/img/h-2-blog-img-3.jpg" alt="">
                 <p>Introduce Richard Leperrière of those amazing features</p>
                 <h5>By Emily Fields</h5>
-             </div>     
+            </div>     
         </div> 
       </section>
   </main>
@@ -286,13 +294,13 @@ export default {
                     height: 0;
                     border-top: 10px solid #F3D0C7 ;
                     border-right: 30px solid transparent;
-            }
+                }
             .decoration-4{
                     width: 0;
                     height: 0;
                     border-top: 10px solid #F3D0C7 ;
                     border-left: 30px solid transparent;
-            }
+                }
             }
             
         }
