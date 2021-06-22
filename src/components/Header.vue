@@ -90,6 +90,7 @@ export default {
 
 <style lang="scss" scoped>
 #nav-bar{
+    font-family: 'Open Sans', sans-serif;
     display:flex;
     justify-content: space-between;
     align-items:center;
@@ -129,7 +130,6 @@ export default {
     }
 }
 #jumbotron{
-    font-family: 'Roboto', sans-serif;
     display: flex;
     padding:0px 20px;
     justify-content: space-between;
