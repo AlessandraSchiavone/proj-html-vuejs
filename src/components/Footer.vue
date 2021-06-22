@@ -32,6 +32,9 @@
                     </li>
                 </ul>
             </div>   
+      </div>
+      <div class="chevron-up">
+            <img src="../assets/svg/svg-2.svg" alt="">
       </div>    
   </footer>
 </template>
@@ -51,6 +54,7 @@ export default {
 
 <style lang="scss" scoped>
 footer{
+    position:relative;
     height:250px;
     background-color:#C0E1CF;
     .box{
@@ -98,5 +102,17 @@ footer{
        } 
 
     }
+    .chevron-up{
+            position:absolute;
+            z-index: 2;
+            right:10px;
+            bottom:30px;
+            width:50px;
+            display:flex;
+            justify-content:center ;
+            align-items: center;
+            height:50px;
+            background-color: #c0e1cf;
+        }  
 }
 </style>

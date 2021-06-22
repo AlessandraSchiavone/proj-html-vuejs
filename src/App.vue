@@ -1,5 +1,14 @@
 <template>
   <div id="app">
+    <div class="bar-dx">
+      <div class="first">
+        <img src="./assets/svg/svg-4.svg" alt="">
+      </div>
+      <div class="second">
+        <img src="./assets/svg/svg-6.svg" alt="">
+      </div>
+      
+    </div>
    <Header :items="navbaritems"/>
    <Main />
    <Footer 
@@ -96,4 +105,33 @@ export default {
 <style lang="scss">
 @import '~@fortawesome/fontawesome-free/css/all.min.css';
 @import './style/variables';
+#app{
+  position:relative;
+  .bar-dx{
+    position:fixed;
+    right:0px;
+    top:20px;
+    z-index:3;
+    .first,
+    .second{
+      display:flex;
+      justify-content:center;
+      align-items: center;
+      width:40px;
+      height:40px;  
+      margin-bottom:10px;
+      img{
+        width:80%;
+      }
+    }
+    .first{
+      padding:5px;
+      background-color:#EE2852 ;
+    }
+    .second{
+      padding:10px;
+      background-color: white;
+    }
+  }
+}
 </style>

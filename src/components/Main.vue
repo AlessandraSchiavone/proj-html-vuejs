@@ -3,29 +3,37 @@
       <!-- suddivisione del main in 4 section -->
       <!-- sezione portfolio  -->
       <section id="portfolio-grid">
-          <div class="col-lg-4">
-              <img src="../assets/img/h-2-port-img-1.jpg" alt="">
+          <div class="grid-row">
+                <div class="col-lg-4">
+                <img src="../assets/img/h-2-port-img-1.jpg" alt="">
+                </div>
+                <div class="col-lg-4">
+                    <img src="../assets/img/h-2-port-img-2.jpg" alt="">
+                </div>
+                <div class="col-lg-4">
+                    <img src="../assets/img/h-2-port-img-3.jpg" alt="">
+                </div>  
           </div>
-          <div class="col-lg-4">
-              <img src="../assets/img/h-2-port-img-2.jpg" alt="">
-          </div>
-          <div class="col-lg-4">
-              <img src="../assets/img/h-2-port-img-3.jpg" alt="">
-          </div>
-          <div class="col-lg-4 book" >
-              <img src="../assets/img/h-2-port-img-4.jpg" alt="">
-              <!-- effetto hover -->
-              <div class="text">
-                  <h4>Illustration of novels</h4>
-                  <h5>Illustration</h5>
+          <div class="grid-row">
+              <div class="chevron-up">
+                  <img src="../assets/svg/svg-2.svg" alt="">
               </div>
+                <div class="col-lg-4 book" >
+                <img src="../assets/img/h-2-port-img-4.jpg" alt="">
+                <!-- effetto hover -->
+                <div class="text">
+                    <h4>Illustration of novels</h4>
+                    <h5>Illustration</h5>
+                </div>
+                </div>
+                <div class="col-lg-4">
+                    <img src="../assets/img/h-2-port-img-5.jpg" alt="">
+                </div>
+                <div class="col-lg-4">
+                    <img src="../assets/img/h-2-port-img-6.jpg" alt="">
+                </div>  
           </div>
-          <div class="col-lg-4">
-              <img src="../assets/img/h-2-port-img-5.jpg" alt="">
-          </div>
-          <div class="col-lg-4">
-              <img src="../assets/img/h-2-port-img-6.jpg" alt="">
-          </div>
+          
       </section>
       <!-- sezione process -->
       <section id="process">
@@ -59,8 +67,11 @@
                 <h4>So we draw along</h4> 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, tempora?</p> 
               </div>
+              
           </div>
-          
+        <div class="chevron-up">
+            <img src="../assets/svg/svg-2.svg" alt="">
+        </div>  
       </section>
       <!-- sezione contatti -->
       <section id="contactus">
@@ -70,7 +81,11 @@
       </section>
       <!-- sezione blog -->
       <section id="blog">
-         <div class="col-lg-4">
+        <div class="chevron-up">
+            <img src="../assets/svg/svg-2.svg" alt="">
+        </div>
+        <div class="box-blog">
+          <div class="col-lg-4">
              <div class="article">
             <!-- decorazione linguetta per la data -->
               <div class="date">
@@ -117,7 +132,9 @@
                 <p>Introduce Richard Leperrière of those amazing features</p>
                 <h5>By Emily Fields</h5>
             </div>     
-        </div> 
+        </div>   
+        </div>
+         
       </section>
   </main>
 </template>
@@ -130,33 +147,48 @@ export default {
 
 <style lang="scss" scoped>
 #portfolio-grid{
-    display: flex;
-    flex-wrap: wrap;
     padding:40px 0;
-    div{ 
+    .grid-row{
         position:relative;
-        img{
-            width:100%;
-        }
-        &.book{
-            cursor: pointer;
-            .text{ 
-            display: none;
+        display: flex;
+        flex-wrap: wrap; 
+        .chevron-up{
             position:absolute;
-            bottom:250px;
-            width:50%;
-            background-color:white;
-            padding:18px;
-            h5{
-                font-style: italic;
-                font-size:18px ;
-                }
-            }   
+            z-index: 2;
+            right:10px;
+            bottom:30px;
+            width:50px;
+            display:flex;
+            justify-content:center ;
+            align-items: center;
+            height:50px;
+            background-color: #c0e1cf;
+        }  
+        .col-lg-4{ 
+            position:relative;
+            img{
+                width:100%;
+            }
+            &.book{
+                cursor: pointer;
+                .text{ 
+                display: none;
+                position:absolute;
+                bottom:250px;
+                width:50%;
+                background-color:white;
+                padding:18px;
+                h5{
+                    font-style: italic;
+                    font-size:18px ;
+                    }
+                }   
+            }
+            &.book:hover .text{
+                display:block;
+            }  
         }
-        &.book:hover .text{
-            display:block;
-        }
-        
+             
     }
 }
 #process{
@@ -165,6 +197,7 @@ export default {
     background-image: url('../assets/svg/svg-3.svg') ;
     background-position: 50% 50%;
     background-repeat: no-repeat;
+    position:relative;
     h3{
         font-size:60px;
         .coursive{
@@ -209,6 +242,18 @@ export default {
         }
        
     }
+    .chevron-up{
+            position:absolute;
+            z-index: 2;
+            right:10px;
+            bottom:30px;
+            width:50px;
+            display:flex;
+            justify-content:center ;
+            align-items: center;
+            height:50px;
+            background-color: #c0e1cf;
+        }  
 }
 #contactus{
     display:flex;
@@ -255,68 +300,86 @@ export default {
       
 }
 #blog{
-    display:flex;
-    width:70%;
-    margin:120px auto;
-    .article{
-        margin-left:30px;
-        position:relative;
-        .date{
+    position:relative;
+   
+    
+    .chevron-up{
             position:absolute;
-            padding:5px;
-            left:20px;
-            top:-20px;
-            .decoration-1{
+            z-index: 2;
+            right:10px;
+            top:-60px;
+            width:50px;
             display:flex;
-            justify-content: center;
+            justify-content:center ;
             align-items: center;
-            width:60px;
-            height:40px;
-            background-color:#C0E1CF;
-            font-size: 28px;
-            font-weight: 700;
-            font-family: 'Courgette', cursive; 
-            }
-            .decoration-2{
-                font-size:11px;
-                text-align: center;
-                padding:2px;
-                font-weight: 700;
-                letter-spacing: 1.2px;
-                text-transform: uppercase;
-                background-color: #F3D0C7;
-               
-            }
-            .ribbon{
-                display:flex;
-                .decoration-3{
-                    width: 0;
-                    height: 0;
-                    border-top: 10px solid #F3D0C7 ;
-                    border-right: 30px solid transparent;
+            height:50px;
+            background-color: #c0e1cf;
+        }
+        .box-blog{
+            display:flex;
+            width:70%;
+            margin:120px auto;
+            .article{
+                margin-left:30px;
+                position:relative;
+                .date{
+                    position:absolute;
+                    padding:5px;
+                    left:20px;
+                    top:-20px;
+                    .decoration-1{
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                    width:60px;
+                    height:40px;
+                    background-color:#C0E1CF;
+                    font-size: 28px;
+                    font-weight: 700;
+                    font-family: 'Courgette', cursive; 
+                    }
+                    .decoration-2{
+                        font-size:11px;
+                        text-align: center;
+                        padding:2px;
+                        font-weight: 700;
+                        letter-spacing: 1.2px;
+                        text-transform: uppercase;
+                        background-color: #F3D0C7;
+                    
+                    }
+                    .ribbon{
+                        display:flex;
+                        .decoration-3{
+                            width: 0;
+                            height: 0;
+                            border-top: 10px solid #F3D0C7 ;
+                            border-right: 30px solid transparent;
+                        }
+                    .decoration-4{
+                            width: 0;
+                            height: 0;
+                            border-top: 10px solid #F3D0C7 ;
+                            border-left: 30px solid transparent;
+                        }
+                    }
+                    
                 }
-            .decoration-4{
-                    width: 0;
-                    height: 0;
-                    border-top: 10px solid #F3D0C7 ;
-                    border-left: 30px solid transparent;
+            img{
+                    width:100%;
+                } 
+                p{
+                    font-size: 26px;
+                    margin:25px 0px 15px 0px;
                 }
-            }
-            
-        }
-       img{
-            width:100%;
-        } 
-        p{
-            font-size: 26px;
-            margin:25px 0px 15px 0px;
-        }
-        h5{
-            font-size: 16px;
-            font-family: 'Courgette', cursive;
-            
-        }
-    } 
+                h5{
+                    font-size: 16px;
+                    font-family: 'Courgette', cursive;
+                    
+                }
+            } 
+        }  
+    
         
         
 }
