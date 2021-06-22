@@ -67,7 +67,13 @@
          <div class="col-lg-4">
              <div class="article">
               <div class="date">
-                  <div class="decoration">07</div>
+                  <div class="decoration-1">07</div>
+                  <div class="decoration-2">May' 19</div>
+                  <div class="ribbon">
+                      <div class="decoration-3"></div>
+                      <div class="decoration-4"></div>
+                  </div>
+                  
               </div>
               <img src="../assets/img/h-2-blog-img-1.jpg" alt=""> 
               <p>This way, loves: a detailed guide through new design</p>
@@ -77,7 +83,12 @@
          <div class="col-lg-4">
              <div class="article">
                 <div class="date">
-                  <div class="decoration">07</div>
+                  <div class="decoration-1">07</div>
+                  <div class="decoration-2">May' 19</div>
+                  <div class="ribbon">
+                      <div class="decoration-3"></div>
+                      <div class="decoration-4"></div>
+                  </div>
               </div> 
                <img src="../assets/img/h-2-blog-img-2.jpg" alt=""> 
                <p>I try to give people a different way of looking art</p> 
@@ -87,7 +98,12 @@
          <div class="col-lg-4">
              <div class="article">
                 <div class="date">
-                  <div class="decoration">07</div>
+                  <div class="decoration-1">07</div>
+                  <div class="decoration-2">May' 19</div>
+                  <div class="ribbon">
+                      <div class="decoration-3"></div>
+                      <div class="decoration-4"></div>
+                  </div>
               </div>
                 <img src="../assets/img/h-2-blog-img-3.jpg" alt="">
                 <p>Introduce Richard Leperrière of those amazing features</p>
@@ -242,7 +258,7 @@ export default {
             padding:5px;
             left:20px;
             top:-20px;
-            .decoration{
+            .decoration-1{
             display:flex;
             justify-content: center;
             align-items: center;
@@ -253,6 +269,32 @@ export default {
             font-weight: 700;
             font-family: 'Courgette', cursive; 
             }
+            .decoration-2{
+                font-size:11px;
+                text-align: center;
+                padding:2px;
+                font-weight: 700;
+                letter-spacing: 1.2px;
+                text-transform: uppercase;
+                background-color: #F3D0C7;
+               
+            }
+            .ribbon{
+                display:flex;
+                .decoration-3{
+                    width: 0;
+                    height: 0;
+                    border-top: 10px solid #F3D0C7 ;
+                    border-right: 30px solid transparent;
+            }
+            .decoration-4{
+                    width: 0;
+                    height: 0;
+                    border-top: 10px solid #F3D0C7 ;
+                    border-left: 30px solid transparent;
+            }
+            }
+            
         }
        img{
             width:100%;
