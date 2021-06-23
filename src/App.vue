@@ -36,32 +36,32 @@ export default {
       navbaritems:[
         {
           name:"Home",
-          url:"#Home",
-          active:false,
+          url:"#home",
+          active:true,
         },
         {
           name:"Pages",
-          url:"#Pages",
+          url:"#pages",
           active:false,
         },
         {
           name:"Portfolio",
-          url:"#Portfolio",
+          url:"#portfolio",
           active:false,
         },
         {
           name:"Blog",
-          url:"#Blog",
+          url:"#blog",
           active:false,
         },
         {
           name:"Shop",
-          url:"#Shop",
+          url:"#shop",
           active:false,
         },
         {
           name:"Elements",
-          url:"#Elements",
+          url:"#elements",
           active:false,
         }
       ],
@@ -105,6 +105,7 @@ export default {
 <style lang="scss">
 @import '~@fortawesome/fontawesome-free/css/all.min.css';
 @import './style/variables';
+@import './style/mixin';
 #app{
   position:relative;
   .bar-dx{
@@ -114,9 +115,7 @@ export default {
     z-index:3;
     .first,
     .second{
-      display:flex;
-      justify-content:center;
-      align-items: center;
+      @include center;
       width:40px;
       height:40px;  
       margin-bottom:10px;

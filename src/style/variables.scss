@@ -11,14 +11,17 @@
 @import "~@fontsource/open-sans/300.css";
 @import '~bootstrap/scss/bootstrap';
 
-
-
+$Corsive:'Courgette';
+$fontOpen:'Open Sans';
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-body{
+html{
+  scroll-behavior: auto;  
+}
+body{  
     font-family: 'Roboto', sans-serif;
 }

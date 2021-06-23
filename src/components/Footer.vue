@@ -15,11 +15,11 @@
             </div>
             <div class="col-lg-3">
                 <h6 v-for="item,index in address" :key="index">
-                     <a :href="item.url"
-                            target="_blank" >
-                         {{ item.name }} </a>
-                </h6>
-                
+                    <a :href="item.url"
+                        target="_blank">
+                         {{ item.name }} 
+                    </a>
+                </h6>   
             </div>
             <div class="col-lg-3">
                 <h6>Stay in touch with us</h6>
@@ -27,14 +27,16 @@
                     <li v-for="(item,index) in socialItems" :key="index">
                         <a :href="item.url"
                             target="_blank" >
-                        <i class="fab" :class="item.class"></i>
+                            <i class="fab" :class="item.class"></i>
                         </a>
                     </li>
                 </ul>
             </div>   
       </div>
       <div class="chevron-up">
-            <img src="../assets/svg/svg-2.svg" alt="">
+          <a href="/">
+              <img src="../assets/svg/svg-2.svg" alt="Up">
+          </a>    
       </div>    
   </footer>
 </template>
@@ -46,21 +48,20 @@ export default {
         socialItems: Array,
         mail: String,
         tel: String,
-        address: Array
-        
+        address: Array   
         }
 }
 </script>
 
 <style lang="scss" scoped>
+@import '../style/mixin';
+@import "../style/variables";
 footer{
     position:relative;
     height:250px;
     background-color:#C0E1CF;
     .box{
-       display:flex;
-       justify-content: center;
-       align-items: center;
+       @include center;
        height:100%;
        width:70%;
        margin: 0 auto;
@@ -68,10 +69,8 @@ footer{
            margin:0px 30px;
        }
        .logo{
-           display:flex;
+           @include center;
            flex-direction: column;
-           justify-content: center;
-           align-items: center;
            img{
                width:40%;
            }
@@ -90,8 +89,7 @@ footer{
            margin:0;
            padding:0;
            li{
-                list-style:none;
-                display: inline;
+                @include listinline;
                 padding:0 12px;
             
             i{
@@ -103,16 +101,9 @@ footer{
 
     }
     .chevron-up{
-            position:absolute;
-            z-index: 2;
-            right:10px;
-            bottom:30px;
-            width:50px;
-            display:flex;
-            justify-content:center ;
-            align-items: center;
-            height:50px;
-            background-color: #c0e1cf;
-        }  
+        @include chevronup;
+        right:10px;
+        bottom:30px; 
+    }  
 }
 </style>

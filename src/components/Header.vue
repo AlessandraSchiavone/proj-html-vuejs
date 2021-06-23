@@ -5,11 +5,17 @@
           <img src="../assets/img/logo-sidearea-1.png" alt="Logo Maree">
           <ul class="list-inline">
               <li v-for="(item,index) in items" :key="index">
-                  <a :href="item.url">
-                   <span @click="toggleActive(index)" :class="{active: item.active}">{{ item.name }} </span>
-                  </a>
-                </li>
-              <li><img src="../assets/svg/svg-1.svg" alt="All"></li>
+                    <a :href="item.url">
+                        <span @click="toggleActive(index)" :class="{active: item.active}">
+                            {{ item.name }}
+                        </span>
+                    </a>
+              </li>
+              <li>
+                  <a href="">
+                      <img src="../assets/svg/svg-1.svg" alt="All">
+                  </a>      
+             </li>
           </ul>
       </section>
       <!-- section jumbotron -->
@@ -22,43 +28,43 @@
           </div> 
           <!-- box contenitore della parte centrale suddiviso in due colonne della stessa dimensione e dallo slier-items    -->
           <div class="box">
-              <!-- colonna di sinistra -->
-            <div class="colsx col-lg-6">
-                <!-- titolo e bottone -->
-                <div class="col-lg-8 offset-lg-4">
-                    <h1>Devotion that never <span class="coursive">ends</span></h1>
-                    <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, molestias!</h4>
-                    <button id="bt-white"> Read More </button>
+                <!-- colonna di sinistra -->
+                <div class="colsx col-lg-6">
+                    <!-- titolo e bottone -->
+                    <div class="col-lg-8 offset-lg-4">
+                        <h1>Devotion that never <span class="coursive">ends</span></h1>
+                        <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, molestias!</h4>
+                        <button id="bt-white"> Read More </button>
+                    </div>
                 </div>
-             </div>
-             <!-- colonna di destra suddivisa in riga e sottorighe per ottenere l'immagine finale -->
-            <div class="coldx col-lg-6">
-                <div class="row-1">
-                    <img src="../assets/img/short-slider-rev-1-img-2.png" alt="">
-                    <img src="../assets/img/h-2-slider-img-14.png" alt="">
-                </div>
-                <div class="row-2">
+                <!-- colonna di destra suddivisa in riga e sottorighe per ottenere l'immagine finale -->
+                <div class="coldx col-lg-6">
+                    <div class="row-1">
+                        <img src="../assets/img/short-slider-rev-1-img-2.png">
+                        <img src="../assets/img/h-2-slider-img-14.png">
+                    </div>
+                    <div class="row-2">
                         <div class="subrow-1">
-                            <img src="../assets/img/h-2-slider-img-12.png" alt=""> 
+                            <img src="../assets/img/h-2-slider-img-12.png"> 
                         </div>
                         <div class="subrow-2">
-                        <img src="../assets/img/h-2-slider-img-13.png" alt="">  
+                            <img src="../assets/img/h-2-slider-img-13.png">  
                         </div>
-                        <img src="../assets/img/h-2-slider-img-15.png" alt="">
-                        <img src="../assets/img/h-2-slider-img-16.png" alt="">
+                            <img src="../assets/img/h-2-slider-img-15.png">
+                            <img src="../assets/img/h-2-slider-img-16.png">
                         <div class="subrow-3">
-                            <img src="../assets/img/short-slider-rev-1-img-6.png" alt="">
+                                <img src="../assets/img/short-slider-rev-1-img-6.png">
                         </div>
                         <div class="subrow-4">
-                        <img src="../assets/img/h-2-slider-img-17.png" alt=""> 
+                            <img src="../assets/img/h-2-slider-img-17.png" > 
                         </div>
+                    </div>
+                </div>   
+                <div class="slider-items">
+                    <span class="small-circle"></span>
+                    <span class="small-circle"></span>
+                    <span class="small-circle"></span>
                 </div>
-            </div>   
-            <div class="slider-items">
-                <span class="small-circle"></span>
-                <span class="small-circle"></span>
-                <span class="small-circle"></span>
-            </div>
           </div>
         <!-- chevron laterale dello slider -->
           <div class="chevron">
@@ -89,10 +95,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../style/mixin';
+@import "../style/variables";
 #nav-bar{
-    font-family: 'Open Sans', sans-serif;
-    display:flex;
-    justify-content: space-between;
+    font-family: $fontOpen;
+    @include spacebetween;
     align-items:center;
     padding:40px 30px;
     height: 80px;
@@ -103,24 +110,23 @@ export default {
         padding:0;
         margin:0;
         li{ 
-            display:inline;
+            @include listinline;
             padding:0px 20px;
+            line-height:19px;
+            letter-spacing: 3px;  
             text-transform: uppercase;
             font-weight: 700;
             font-size: 14px;
-            letter-spacing: 3px;
-            list-style:none;
-            line-height:19px;
             a{
                 text-decoration: none;
                 color:black;
                 span{
-                cursor:pointer;
-                display: inline-block;
+                    cursor:pointer;
+                    display: inline-block;
                 &.active {
-                line-height: 6px;  
-                border-bottom:5px solid #F5D8CA;
-                }
+                    line-height: 6px;  
+                    border-bottom:5px solid #F5D8CA;
+                    }
                 }
             }
             img{
@@ -130,21 +136,16 @@ export default {
     }
 }
 #jumbotron{
-    display: flex;
-    padding:0px 20px;
-    justify-content: space-between;
+    @include spacebetween;
     height:600px;
+    padding:0px 20px;
     .chevron{
-        display:flex;
-        justify-content: center;
-        align-items: center;
+        @include center;
         height:100%;
        .circle{
+           @include center;
             height:30px;
             width:30px;
-            display:flex;
-            justify-content: center;
-            align-items: center;
             color:white;
             border-radius:50%;
             cursor: pointer;
@@ -152,10 +153,8 @@ export default {
             padding:5px;
         }   
     }
-    
     .box{
-        display: flex;
-        flex-wrap: wrap;
+        @include wrap;
     .colsx{
       height:100%;
       padding:50px 10px; 
@@ -164,10 +163,10 @@ export default {
           font-size:85px;
           font-weight:300;
           .coursive{
-              font-family: 'Courgette', cursive;
-              font-weight: 600;
+            font-family: $Corsive;
+            font-weight: 600;
           }
-      }
+        }
       h4{
           width:85%;
           padding:5px 0px;
@@ -178,19 +177,10 @@ export default {
           letter-spacing: 1.2px;
       }
       button{
-          margin:30px 0px;
-          font-family: 'Open Sans', sans-serif;
-          text-transform: uppercase;
-          font-size:14px;
+          @include button;
           border:3px solid #E1C0B0;
-          letter-spacing: 2px;
-          font-weight:700;
           background-color: white;
           padding:18px 45px;
-          &:hover{
-              background-color:#E1C0B0;
-              color: white;
-          }
       } 
     }
     .coldx{
@@ -198,8 +188,7 @@ export default {
         padding:50px 0px;
         .row-1{
             width:660px;
-            display:flex;
-            justify-content: space-between;
+            @include spacebetween;
         }
         .row-2{
             display: flex;
@@ -215,26 +204,22 @@ export default {
                 left:-10px;
             }
             .subrow-3{
+                @include flexend;
                 position:absolute;
                 top:50px;
-                display:flex;
-                width:700px;
-                justify-content: flex-end;
+                width:700px;    
             }
             .subrow-4{
+                @include flexend;
                 position:absolute;
-                bottom:0px;
-                display:flex;
-                width:800px;
-                justify-content: flex-end; 
+                bottom:0px;  
+                width:800px;     
             }
         }    
     }
     .slider-items{
         width:100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include center;
         .small-circle{
             height:10px;
             width:10px;
@@ -244,7 +229,6 @@ export default {
             background-color:#E1C0B0 ;
         }
     }
-    }
-    
+    }   
 }
 </style>

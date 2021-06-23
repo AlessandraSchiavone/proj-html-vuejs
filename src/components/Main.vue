@@ -2,139 +2,147 @@
   <main>
       <!-- suddivisione del main in 4 section -->
       <!-- sezione portfolio  -->
-      <section id="portfolio-grid">
+      <section id="portfolio">
           <div class="grid-row">
                 <div class="col-lg-4">
-                <img src="../assets/img/h-2-port-img-1.jpg" alt="">
+                    <img src="../assets/img/h-2-port-img-1.jpg">
                 </div>
                 <div class="col-lg-4">
-                    <img src="../assets/img/h-2-port-img-2.jpg" alt="">
+                    <img src="../assets/img/h-2-port-img-2.jpg">
                 </div>
                 <div class="col-lg-4">
-                    <img src="../assets/img/h-2-port-img-3.jpg" alt="">
-                </div>  
-          </div>
-          <div class="grid-row">
-              <div class="chevron-up">
-                  <img src="../assets/svg/svg-2.svg" alt="">
-              </div>
+                    <img src="../assets/img/h-2-port-img-3.jpg">
+                </div>
+                <div class="chevron-up">
+                    <a href="/">
+                        <img src="../assets/svg/svg-2.svg" alt="Up">
+                    </a>    
+                </div> 
+           </div>
+           <div class="grid-row">
+                <div class="chevron-up">
+                    <a href="/">
+                        <img src="../assets/svg/svg-2.svg" alt="Up">
+                    </a>    
+                </div>
                 <div class="col-lg-4 book" >
-                <img src="../assets/img/h-2-port-img-4.jpg" alt="">
-                <!-- effetto hover -->
-                <div class="text">
-                    <h4>Illustration of novels</h4>
-                    <h5>Illustration</h5>
-                </div>
-                </div>
-                <div class="col-lg-4">
-                    <img src="../assets/img/h-2-port-img-5.jpg" alt="">
+                    <img src="../assets/img/h-2-port-img-4.jpg" alt="Book">
+                    <!-- effetto hover -->
+                    <div class="text">
+                        <h4>Illustration of novels</h4>
+                        <h5>Illustration</h5>
+                    </div>
                 </div>
                 <div class="col-lg-4">
-                    <img src="../assets/img/h-2-port-img-6.jpg" alt="">
+                    <img src="../assets/img/h-2-port-img-5.jpg" >
+                </div>
+                <div class="col-lg-4">
+                    <img src="../assets/img/h-2-port-img-6.jpg" >
                 </div>  
-          </div>
-          
+            </div>  
       </section>
       <!-- sezione process -->
       <section id="process">
-          <h3>Working <span class="coursive">process</span></h3>
-          <div class="items-center">
-              <div class="item-description">
-                <div class="circle-icon">
-                    <i style="color:#BADAC9" class="fas fa-lightbulb"></i>
-                </div> 
-                <h4>First theres an idea</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, tempora?</p> 
-              </div>
-              <div class="item-description">
-                <div class="circle-icon">
-                    <i style="color:#F8D12D" class="far fa-comment"></i>
+            <h3>Working <span class="coursive">process</span></h3>
+            <div class="items-center">
+                <div class="item-description">
+                    <div class="circle-icon">
+                        <i style="color:#BADAC9" class="fas fa-lightbulb"></i>
+                    </div> 
+                    <h4>First theres an idea</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, tempora?</p> 
                 </div>
-                <h4>Than we talk about</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, tempora?</p> 
-              </div>
-              <div class="item-description">
-                <div class="circle-icon">
-                    <i style="color:#80465F" class="fas fa-cloud"></i>
+                <div class="item-description">
+                    <div class="circle-icon">
+                        <i style="color:#F8D12D" class="far fa-comment"></i>
+                    </div>
+                    <h4>Than we talk about</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, tempora?</p> 
                 </div>
-                <h4>And we think about</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, tempora?</p> 
-              </div>
-              <div class="item-description">
-                <div class="circle-icon">
-                  <i style="color:#EB6950" class="fas fa-marker"></i>
-                </div> 
-                <h4>So we draw along</h4> 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, tempora?</p> 
-              </div>
-              
-          </div>
-        <div class="chevron-up">
-            <img src="../assets/svg/svg-2.svg" alt="">
-        </div>  
+                <div class="item-description">
+                    <div class="circle-icon">
+                        <i style="color:#80465F" class="fas fa-cloud"></i>
+                    </div>
+                    <h4>And we think about</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, tempora?</p> 
+                </div>
+                <div class="item-description">
+                    <div class="circle-icon">
+                    <i style="color:#EB6950" class="fas fa-marker"></i>
+                    </div> 
+                    <h4>So we draw along</h4> 
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, tempora?</p> 
+                </div>   
+            </div>
+            <div class="chevron-up">
+                <a href="/">
+                    <img src="../assets/svg/svg-2.svg" alt="Up">
+                </a>    
+            </div>  
       </section>
       <!-- sezione contatti -->
       <section id="contactus">
-        <h3>Want to work with us? Send us <span class="coursive">a message!</span></h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, eius rem cumque impedit soluta commodi reprehenderit dolor ullam minima esse quaerat ratione error consequuntur odio expedita nisi porro cum enim.</p>  
-        <button>Contact </button>
+            <h3>Want to work with us? Send us <span class="coursive">a message!</span></h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, eius rem cumque impedit soluta commodi reprehenderit dolor ullam minima esse quaerat ratione error consequuntur odio expedita nisi porro cum enim.</p>  
+            <button>Contact </button>
       </section>
       <!-- sezione blog -->
       <section id="blog">
         <div class="chevron-up">
-            <img src="../assets/svg/svg-2.svg" alt="">
+          <a href="/">
+              <img src="../assets/svg/svg-2.svg" alt="Up">
+          </a>    
         </div>
         <div class="box-blog">
-          <div class="col-lg-4">
-             <div class="article">
-            <!-- decorazione linguetta per la data -->
-              <div class="date">
-                    <div class="decoration-1">07</div>
-                    <div class="decoration-2">May' 19</div>
-                    <div class="ribbon">
-                        <div class="decoration-3"></div>
-                        <div class="decoration-4"></div>
-                    </div>  
-              </div>
-              <img src="../assets/img/h-2-blog-img-1.jpg" alt=""> 
-              <p>This way, loves: a detailed guide through new design</p>
-              <h5>By Emily Fields</h5>  
-             </div> 
-         </div>
-         <div class="col-lg-4">
-             <div class="article">
-            <!-- decorazione linguetta per la data -->
-                <div class="date">
-                    <div class="decoration-1">07</div>
-                    <div class="decoration-2">May' 19</div>
-                    <div class="ribbon">
-                        <div class="decoration-3"></div>
-                        <div class="decoration-4"></div>
+            <div class="col-lg-4">
+                <div class="article">
+                <!-- decorazione linguetta per la data -->
+                    <div class="date">
+                        <div class="decoration-1">07</div>
+                        <div class="decoration-2">May' 19</div>
+                        <div class="ribbon">
+                            <div class="decoration-3"></div>
+                            <div class="decoration-4"></div>
+                        </div>  
                     </div>
-              </div> 
-               <img src="../assets/img/h-2-blog-img-2.jpg" alt=""> 
-               <p>I try to give people a different way of looking art</p> 
-               <h5>By Emily Fields</h5>
-             </div>   
-         </div>
-         <div class="col-lg-4">
-            <div class="article">
-            <!-- decorazione linguetta per la data -->     
-                <div class="date">
-                    <div class="decoration-1">07</div>
-                    <div class="decoration-2">May' 19</div>
-                    <div class="ribbon">
-                        <div class="decoration-3"></div>
-                        <div class="decoration-4"></div>
+                    <img src="../assets/img/h-2-blog-img-1.jpg" > 
+                    <p>This way, loves: a detailed guide through new design</p>
+                    <h5>By Emily Fields</h5>  
+                </div> 
+            </div>
+            <div class="col-lg-4">
+                <div class="article">
+                <!-- decorazione linguetta per la data -->
+                    <div class="date">
+                        <div class="decoration-1">07</div>
+                        <div class="decoration-2">May' 19</div>
+                        <div class="ribbon">
+                            <div class="decoration-3"></div>
+                            <div class="decoration-4"></div>
+                        </div>
+                    </div> 
+                    <img src="../assets/img/h-2-blog-img-2.jpg" > 
+                    <p>I try to give people a different way of looking art</p> 
+                    <h5>By Emily Fields</h5>
+                </div>   
+            </div>
+            <div class="col-lg-4">
+                <div class="article">
+                <!-- decorazione linguetta per la data -->     
+                    <div class="date">
+                        <div class="decoration-1">07</div>
+                        <div class="decoration-2">May' 19</div>
+                        <div class="ribbon">
+                            <div class="decoration-3"></div>
+                            <div class="decoration-4"></div>
+                        </div>
                     </div>
-                </div>
-                <img src="../assets/img/h-2-blog-img-3.jpg" alt="">
-                <p>Introduce Richard Leperrière of those amazing features</p>
-                <h5>By Emily Fields</h5>
-            </div>     
-        </div>   
-        </div>
-         
+                    <img src="../assets/img/h-2-blog-img-3.jpg" >
+                    <p>Introduce Richard Leperrière of those amazing features</p>
+                    <h5>By Emily Fields</h5>
+                </div>     
+            </div>   
+        </div>        
       </section>
   </main>
 </template>
@@ -146,23 +154,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#portfolio-grid{
+@import '../style/mixin';
+@import "../style/variables";
+#portfolio{
     padding:40px 0;
     .grid-row{
         position:relative;
-        display: flex;
-        flex-wrap: wrap; 
-        .chevron-up{
-            position:absolute;
-            z-index: 2;
+        @include wrap; 
+        .chevron-up{ 
+            @include chevronup;
             right:10px;
             bottom:30px;
-            width:50px;
-            display:flex;
-            justify-content:center ;
-            align-items: center;
-            height:50px;
-            background-color: #c0e1cf;
         }  
         .col-lg-4{ 
             position:relative;
@@ -172,23 +174,22 @@ export default {
             &.book{
                 cursor: pointer;
                 .text{ 
-                display: none;
-                position:absolute;
-                bottom:250px;
-                width:50%;
-                background-color:white;
-                padding:18px;
-                h5{
-                    font-style: italic;
-                    font-size:18px ;
-                    }
-                }   
-            }
+                        display: none;
+                        position:absolute;
+                        bottom:250px;
+                        width:50%;
+                        background-color:white;
+                        padding:18px;
+                        h5{
+                            font-style: italic;
+                            font-size:18px ;
+                            }
+                    }   
+                }
             &.book:hover .text{
                 display:block;
             }  
-        }
-             
+        }        
     }
 }
 #process{
@@ -201,32 +202,26 @@ export default {
     h3{
         font-size:60px;
         .coursive{
-              font-family: 'Courgette', cursive;
-              font-weight: 600;
-          }
+            font-family: $Corsive;
+            font-weight: 600;
+        }
     }
     .items-center{
         width:66%;
         margin: 50px auto;
-        display:flex;
-        justify-content: center;
-        align-items: center;
+        @include center;
         .item-description{
-            display:flex;
+            @include center;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
             margin-top:20px;
             .circle-icon{
-            display:flex;
-            justify-content: center;
-            align-items: center;
+            @include center;
             width:160px;
             height:160px;
             border-radius: 50%;
             background-color: #FAF7F1;
-            i{
-                font-size: 50px;
+                i{
+                    font-size: 50px;
                 }
             }
             h4{
@@ -239,28 +234,18 @@ export default {
                 letter-spacing: 1.2px;
                 margin:10px 0;
             }
-        }
-       
+        }    
     }
     .chevron-up{
-            position:absolute;
-            z-index: 2;
-            right:10px;
-            bottom:30px;
-            width:50px;
-            display:flex;
-            justify-content:center ;
-            align-items: center;
-            height:50px;
-            background-color: #c0e1cf;
-        }  
+        @include chevronup;
+        right:10px;
+        bottom:30px;       
+    }  
 }
 #contactus{
     display:flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    @include center;
     height:500px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -270,7 +255,7 @@ export default {
         margin-top:90px;
         font-size:65px;
         .coursive{
-            font-family: 'Courgette', cursive;
+            font-family: $Corsive;
             font-weight: 600;
         }
     }
@@ -283,104 +268,73 @@ export default {
         width:70%;
     }
     button{
-          margin:30px 0px;
-          font-family: 'Open Sans', sans-serif;
-          text-transform: uppercase;
-          font-size:14px;
-          border:none;
-          letter-spacing: 2px;
-          font-weight:700;
-          background-color:#D8F0E3;
-          padding:20px 80px;
-          &:hover{
-              background-color:#E1C0B0;
-              color: white;
-          }
-      }
-      
+        @include button;
+        border:none;
+        background-color:#D8F0E3;
+        padding:20px 80px;
+    }      
 }
 #blog{
-    position:relative;
-   
-    
+    position:relative; 
     .chevron-up{
-            position:absolute;
-            z-index: 2;
-            right:10px;
-            top:-60px;
-            width:50px;
-            display:flex;
-            justify-content:center ;
-            align-items: center;
-            height:50px;
-            background-color: #c0e1cf;
-        }
-        .box-blog{
-            display:flex;
-            width:70%;
-            margin:120px auto;
-            .article{
-                margin-left:30px;
-                position:relative;
-                .date{
-                    position:absolute;
-                    padding:5px;
-                    left:20px;
-                    top:-20px;
-                    .decoration-1{
-                    display:flex;
-                    justify-content: center;
-                    align-items: center;
+        @include chevronup;
+        right:10px;
+        top:-60px;    
+    }
+    .box-blog{
+        display:flex;
+        width:70%;
+        margin:120px auto;
+        .article{
+            margin-left:30px;
+            position:relative;
+            .date{
+                position:absolute;
+                padding:5px;
+                left:20px;
+                top:-20px;
+                .decoration-1{
+                    @include center;
                     width:60px;
                     height:40px;
                     background-color:#C0E1CF;
                     font-size: 28px;
                     font-weight: 700;
-                    font-family: 'Courgette', cursive; 
+                    font-family:$Corsive; 
+                }
+                .decoration-2{
+                    padding:2px;
+                    background-color: #F3D0C7;
+                    text-align: center;
+                    text-transform: uppercase;
+                    letter-spacing: 1.2px;
+                    font-size:11px;
+                    font-weight: 700;      
+                }
+                .ribbon{
+                    display:flex;
+                    .decoration-3{
+                        @include ribbon;
+                        border-right: 30px solid transparent;
                     }
-                    .decoration-2{
-                        font-size:11px;
-                        text-align: center;
-                        padding:2px;
-                        font-weight: 700;
-                        letter-spacing: 1.2px;
-                        text-transform: uppercase;
-                        background-color: #F3D0C7;
-                    
-                    }
-                    .ribbon{
-                        display:flex;
-                        .decoration-3{
-                            width: 0;
-                            height: 0;
-                            border-top: 10px solid #F3D0C7 ;
-                            border-right: 30px solid transparent;
-                        }
                     .decoration-4{
-                            width: 0;
-                            height: 0;
-                            border-top: 10px solid #F3D0C7 ;
-                            border-left: 30px solid transparent;
-                        }
+                        @include ribbon;
+                        border-left: 30px solid transparent;
                     }
-                    
-                }
+                }        
+            }
             img{
-                    width:100%;
-                } 
-                p{
-                    font-size: 26px;
-                    margin:25px 0px 15px 0px;
-                }
-                h5{
-                    font-size: 16px;
-                    font-family: 'Courgette', cursive;
-                    
-                }
+                width:100%;
             } 
-        }  
-    
-        
-        
+            p{
+                font-size: 26px;
+                margin:25px 0px 15px 0px;
+            }
+            h5{
+                font-size: 16px;
+                font-family: $Corsive;   
+            }
+        } 
+    }          
 }
 </style>

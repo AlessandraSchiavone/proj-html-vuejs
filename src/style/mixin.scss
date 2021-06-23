@@ -1,0 +1,46 @@
+@mixin center{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+@mixin flexend{
+    display:flex;
+    justify-content: flex-end;
+}
+@mixin wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+@mixin spacebetween{
+    display:flex;
+    justify-content: space-between;
+}
+@mixin chevronup{
+    @include center;
+    position:absolute;
+    z-index: 2;
+    width:50px;  
+    height:50px;
+    background-color: #c0e1cf;
+}
+@mixin ribbon{
+    width: 0;
+    height: 0;
+    border-top: 10px solid #F3D0C7 ;
+}
+@mixin button{
+    margin:30px 0px;
+    font-family: $fontOpen;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size:14px;
+    font-weight:700;
+    &:hover{
+        background-color:#E1C0B0;
+        color: white;
+    }
+}
+@mixin listinline{
+    list-style:none;
+    display: inline;
+}
